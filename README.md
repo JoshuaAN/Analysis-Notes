@@ -1,3 +1,3 @@
 # Analysis-Notes
 
-<a href="#" onclick='window.open("https://joshuaan.github.io/Analysis-Notes/main.pdf");return false;'>Access PDF</a>
+<a href="https://joshuaan.github.io/Analysis-Notes/main.pdf" target="_blank">Access PDF</a>
