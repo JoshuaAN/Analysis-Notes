@@ -26,3 +26,4 @@ jobs:
         with:
           name: thesis
           path: out/thesis.pdf
+          
