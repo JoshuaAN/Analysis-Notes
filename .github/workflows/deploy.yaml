@@ -26,7 +26,6 @@ jobs:
         with:
           name: main
           path: out/main.pdf
-        uses: JamesIves/github-pages-deploy-action@3.6.2
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
