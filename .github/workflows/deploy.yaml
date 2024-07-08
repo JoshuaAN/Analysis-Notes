@@ -17,12 +17,12 @@ jobs:
       - name: Build
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: thesis.tex
+          root_file: main.tex
       - name: Copy
         run: |
           mkdir out
-          cp ./thesis.pdf ./out/thesis.pdf
+          cp ./main.pdf ./out/main.pdf
       - uses: actions/upload-artifact@v2
         with:
           name: thesis
-          path: out/thesis.pdf
+          path: out/main.pdf
