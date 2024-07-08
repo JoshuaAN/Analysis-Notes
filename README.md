@@ -1,3 +1,3 @@
 # Analysis-Notes
 
-<a href="https://joshuaan.github.io/Analysis-Notes/main.pdf" target="_blank">Access PDF</a>
+<a target="_blank" href="https://joshuaan.github.io/Analysis-Notes/main.pdf">Access PDF</a>
