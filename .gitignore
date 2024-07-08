@@ -1,0 +1,8 @@
+
+# latex compiler output files
+**.sta
+**.out
+**.aux
+**.log
+**.synctex.gz
+**.toc
