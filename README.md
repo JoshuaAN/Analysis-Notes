@@ -1,3 +1,3 @@
 # Analysis-Notes
 
-Access PDF at https://joshuaan.github.io/Analysis-Notes/main.pdf
+Access PDF at [link](https://joshuaan.github.io/Analysis-Notes/main.pdf){target="_blank"}
