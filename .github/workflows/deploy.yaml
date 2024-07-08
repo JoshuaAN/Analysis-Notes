@@ -26,13 +26,3 @@ jobs:
         with:
           name: thesis
           path: out/thesis.pdf
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.6.2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          CLEAN: true
-          SINGLE_COMMIT: true
-          FOLDER: out
-          GIT_CONFIG_NAME: lukasbachbot
-          GIT_CONFIG_EMAIL: bot@noreply.lukasbach.com
