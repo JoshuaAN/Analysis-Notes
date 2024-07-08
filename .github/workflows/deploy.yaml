@@ -27,11 +27,13 @@ jobs:
           name: main
           path: out/main.pdf
         uses: JamesIves/github-pages-deploy-action@3.6.2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          CLEAN: true
-          SINGLE_COMMIT: true
-          FOLDER: out
-          GIT_CONFIG_NAME: joshuaan
-          GIT_CONFIG_EMAIL: bot@noreply.joshuaan.com
+        - name: Deploy
+          uses: JamesIves/github-pages-deploy-action@3.6.2
+          with:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            BRANCH: gh-pages
+            CLEAN: true
+            SINGLE_COMMIT: true
+            FOLDER: out
+            GIT_CONFIG_NAME: joshuaan
+            GIT_CONFIG_EMAIL: bot@noreply.joshuaan.com
