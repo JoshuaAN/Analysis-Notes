@@ -3,9 +3,6 @@
 
 \usepackage{amsthm}
 
-\newcommand{\bbQ}{\mathbb{Q}}
-\newcommand{\bbZ}{\mathbb{Z}}
-
 \begin{document}
 
 \subsection{Introduction}
@@ -15,6 +12,27 @@ $\sqrt{2}$, namely that there is no rational solution to the
 equation $p^2 = 2$.
 
 \newtheorem{thm}{Theorem}[subsection]
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{lem}[thm]{Lemma}
+
+\begin{defn}
+    Let $a$ be an integer. We say that $a$ is \textit{even}
+    if there exists an integer $k$ such that $a = 2k$.
+    Similiarly, we say that $a$ is \textit{odd}
+    if there exists an integer $k$ such that $a = 2k + 1$.
+\end{defn}
+
+\begin{lem}
+    \label{lem:1}
+    The product of two integers is even if and only if one of
+    them is even.
+\end{lem}
+\begin{proof}
+
+    The proof of this lemma is left to the reader. \qedhere
+\end{proof}
+
 \begin{thm}[The Irrationality of $\sqrt{2}$]
     There is no rational $p$ such that $p^2 = 2$.
 \end{thm}
@@ -30,10 +48,24 @@ equation $p^2 = 2$.
 
     From the following and~\eqref{eq:1}, we see that
     \begin{align}
-        m^2 = 2n^2.
+        m^2 = 2n^2. \label{eq:2}
     \end{align}
-    This implies that $m$ is even and further more that $n$ is even.
-    This contradictions our assumption that both
-    $m$ and $n$ are not both even. \qedhere
+    Thus, by definition $m^2$ is even and therefore
+    $m$ is even by Lemma~\ref{lem:1}.
+    Then, by definition, there exists a integer $q$ 
+    such that $m = 2q$. Therefore, we see that
+    equation~\eqref{eq:2} becomes
+    \begin{align}
+        m^2 = (2q)^2 = 4q^2 = 2n^2 \label{eq:3}
+    \end{align} which implies that
+    \begin{align}
+        n^2 = 2q^2. \label{eq:4}
+    \end{align}
+    Furthermore, $n$ must also be even using the same
+    reasoning for $m$. This contradictions our assumption that both
+    $m$ and $n$ are not both even.
+
+    Thus, we conclude that there is no rational number $p$
+    that satisfies the equation $p^2 = 2$\qedhere
 \end{proof}
 \end{document}
